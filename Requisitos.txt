@@ -1,0 +1,15 @@
+Requisitos de la práctica:
+    Implementar en C un programa que utilice los tres algoritmos de exclusión mutua para dos
+procesos vistos en clase: Dekker, Peterson y Kessels.
+El programa deberá lanzar dos hilos que iteren 20 veces, compitiendo en cada iteración para
+entrar a su sección crítica y utilizando el algoritmo de Dekker para manejar la exclusión mutua.
+Luego, deberá esperar a que ambos hilos terminen su ejecución y lanzar otros dos hilos que se
+comportarán de la misma manera, pero utilizarán el algoritmo de Peterson para la exclusión
+mutua.
+    Finalmente, una vez terminada la ejecución del segundo par de hilos deberá lanzar un tercer par,
+que utilice para la exclusión mutua el algoritmo de Kessels.
+En todos los casos, la sección crítica consistirá en tres pasos:
+    *imprimir en pantalla un mensaje que indique que el hilo entró a su sección crítica e indique el
+identificador del hilo.
+    *realizar iterativamente la suma de los primeros mil números naturales (para tardar un poco)
+    *imprimir en pantalla un mensaje que indique que el hilo ha terminado su sección crítica.
